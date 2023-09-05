@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+        integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous" />
+    <!-- Owl Carousel CSS -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <title>Home</title>
+</head>
+
+<body>
+    <section class="secPreloader hidden" id="secPreloader">
+        <span class="loader"></span>
+
+    </section>
+    <nav class="navBar">
+        <ul id="navList">
+            <a href="#secNews" data-type="relevancy">Más importantes</a>
+            <a href="#secNews" data-type="popularity">Populares</a>
+            <a href="#secNews" data-type="publishedAt">Publicados por</a>
+            <a href="#secNews" data-type="favorites"> Noticias favoritas</a>
+        </ul>
+        <i class="iconmenu fas fa-bars" id="iconMenu"></i>
+    </nav>
+
+    <header class="header">
+        <section class="owl-carousel" id="carrusel"></section>
+    </header>
+
+    <main>
+        <section class="secFilterText">
+            <input type="text" placeholder="Busca por nombre de noticia o por autor" class="css-input" id="inputFilter">
+        </section>
+        <h2 id="textNew">Noticias</h2>
+        <section class="seccionNews" id="secNews">
+            <!-- <figure class="cardNew">
+
+                <img src="https://www.nationalgeographic.com.es/medio/2022/08/07/el-sol_e26b22b0_1200x720.jpg" alt="">
+                <figcaption>
+                    <article>
+                        <h3>titulo</h3>
+                        <h3>Autor</h3>
+                    </article>
+                    <p>The permission less pilot is a product demo that uses public, customer-specific data to instantly
+                        deliver the 'wow!' moment.</p>
+                    <button>Ver mas</button>
+                </figcaption>
+            </figure> -->
+        </section>
+
+        <section class="secLoader hidden" id="secLoad">
+            <span class="loader"></span>
+        </section>
+        <section class="secDetail hidden">
+            <article class="secDetail__sec1">
+
+                <h4></h4>
+                <img src="" alt="">
+                <p></p>
+            </article>
+            <article class="secDetail__sec2">
+                <button class="btnMain">Sección principal</button>
+                <button class="btnNext">Siguiente noticia</button>
+            </article>
+        </section>
+
+    </main>
+    <footer>
+
+    </footer>
+
+
+    <!-- axios  -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <!-- jQuery 3.3.1 CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- Owl Carousel JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <!-- toastify-js  -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <!-- Archivo principal  -->
+    <script src="./js/main.js"></script>
+</body>
+
+</html>

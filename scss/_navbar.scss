@@ -1,0 +1,60 @@
+.navBar {
+  display: flex;
+  justify-content: space-between;
+  ul {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    right: 0;
+    top: 0;
+    position: fixed;
+    background-color: $mainColor;
+    z-index: 2;
+
+    a {
+      font-size: 1.5rem;
+      color: $white;
+      transition: 0.5s;
+      &:hover {
+        color: $thirdColor;
+        transition: 0.5s;
+      }
+    }
+  }
+  .iconmenu {
+    font-size: 30px;
+    z-index: 10;
+    padding: 20px;
+  }
+}
+
+.hidden {
+  display: none !important;
+}
+
+@media (min-width: 768px) {
+  .navBar {
+    ul {
+      flex-direction: row;
+      height: 50px;
+      padding: 20px;
+      justify-content: end;
+      a {
+        font-size: 1rem;
+      }
+    }
+    .iconmenu {
+      display: none;
+      cursor: pointer;
+      color: #fff;
+      transition: 0.5;
+    }
+    .iconColor {
+      transition: 0.5;
+    }
+  }
+}

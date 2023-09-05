@@ -1,0 +1,127 @@
+.header {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  .owl-carousel {
+    position: relative;
+    z-index: 1 !important;
+    padding: 0 10px;
+    figure {
+      width: 100%;
+      height: 300px;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+}
+
+main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  h2 {
+    padding: 0 20px;
+  }
+  .secFilterText {
+    margin: 2% 0;
+    width: 100%;
+    padding: 0 10%;
+    .css-input {
+      width: 100%;
+      padding: 8px 10px;
+      font-size: 16px;
+      border-width: 1px;
+      border-color: #cccccc;
+      background-color: #ffffff;
+      color: #000000;
+      border-style: solid;
+      border-radius: 8px;
+      box-shadow: 1px 0px 5px rgba(12, 36, 97, 0.57);
+    }
+    .css-input:focus {
+      outline: none;
+    }
+  }
+
+  h2 {
+    text-align: center;
+  }
+  .seccionNews {
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  .secDetail {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 0 20px;
+
+    &__sec1 {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      img {
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+        border-radius: 10px;
+      }
+    }
+
+    &__sec2 {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 20px;
+      .btnMain {
+        border-radius: none;
+        background: $mainColor;
+        padding: 5px 20px;
+        font-family: $fontMain;
+        cursor: pointer;
+        transition: 0.5s;
+        color: $white;
+        border: none;
+        border-radius: 5px;
+        &:hover {
+          background: $thirdColor;
+          color: $mainColor;
+        }
+      }
+      .btnNext {
+        @extend .btnMain;
+        background-color: $white;
+        border: 1px solid $mainColor;
+        color: $mainColor;
+        &:hover {
+          background: $mainColor;
+          color: $white;
+          transition: 0.5s;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .header {
+    margin-top: 60px;
+  }
+  main {
+    .seccionNews {
+      justify-content: center;
+    }
+
+    .secDetail {
+      padding: 0 10%;
+    }
+  }
+}
