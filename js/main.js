@@ -1,6 +1,6 @@
 // URL DE LA API
 const URLAPI =
-  "https://newsapi.org/v2/everything?q=bitcoin&language=es&apiKey=7141b98a956546f084a51645b09156c5";
+  "https://newsapi.org/v2/everything?q=keyword&apiKey=006e8043d19847b89e145acea0ccc319";
 
 let news = [];
 // Endpoints que me sirven para hacer filtros a la api
@@ -276,7 +276,7 @@ const paintNew = (noticia) => {
     secNews.classList.remove("hidden");
     secDetail.classList.add("hidden");
     secDetail.classList.remove("slide-in-fwd-center");
-    showPreloader()
+    showPreloader();
     showloader(news.articles, "más importantes");
   });
 
